@@ -18,7 +18,7 @@ export default function Launches() {
             {data.map(({ id, name, links, details }) => (
               <Link to={`/launches/${id}`} key={id} className="p-5 bg-zinc-900">
                 {links.patch.large ? (
-                  <img src={links.patch.large} />
+                  <img src={links.patch.large} alt=''/>
                 ) : (
                   <img
                     src="https://images2.imgbox.com/40/e3/GypSkayF_o.png"
